@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="udacity.android.simplejavaquiz.MainActivity">
+
+    <!-- Parent Layout -->
+    <LinearLayout style="@style/linear_layout_style">
+
+        <!-- Question 1-->
+        <LinearLayout
+            android:id="@+id/keyword_question_layout"
+            style="@style/linear_layout_style">
+
+            <TextView
+                android:id="@+id/keyword_question"
+                style="@style/question_textview_style"
+                android:text="@string/keyword_question" />
+
+            <!-- Question Directions -->
+            <TextView
+                style="@style/direction_textview_style"
+                android:text="@string/checkbox_directions" />
+
+            <!-- Answer Choices -->
+            <LinearLayout
+                android:id="@+id/keyword_answer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/button_padding">
+
+                <!-- Four Possible Answers -->
+                <CheckBox
+                    android:id="@+id/jump_checkbox"
+                    style="@style/checkbox_style"
+                    android:text="@string/keyword_jump" />
+
+                <CheckBox
+                    android:id="@+id/finally_checkbox"
+                    style="@style/checkbox_style"
+                    android:text="@string/keyword_finally" />
+
+                <CheckBox
+                    android:id="@+id/continue_checkbox"
+                    style="@style/checkbox_style"
+                    android:text="@string/keyword_continue" />
+
+                <CheckBox
+                    android:id="@+id/instanceof_checkbox"
+                    style="@style/checkbox_style"
+                    android:text="@string/keyword_instanceof" />
+
+            </LinearLayout>
+
+            <!-- Line separator -->
+            <View style="@style/line_separator_style" />
+
+        </LinearLayout>
+
+        <!-- Question 2 -->
+        <LinearLayout
+            android:id="@+id/platform_question_layout"
+            style="@style/linear_layout_style">
+
+            <TextView
+                android:id="@+id/platform_question"
+                style="@style/question_textview_style"
+                android:text="@string/platform_question" />
+
+            <!-- Answer Choices -->
+            <RadioGroup
+                android:id="@+id/platform_answer"
+                style="@style/radio_group_style">
+
+                <RadioButton
+                    android:id="@+id/platform_true_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/true_answer" />
+
+                <RadioButton
+                    android:id="@+id/platform_false_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/false_answer" />
+            </RadioGroup>
+
+            <!-- Line separator -->
+            <View style="@style/line_separator_style" />
+
+        </LinearLayout>
+
+        <!-- Question 3 -->
+        <LinearLayout
+            android:id="@+id/efficiency_question_layout"
+            style="@style/linear_layout_style">
+
+            <TextView
+                android:id="@+id/efficiency_question"
+                style="@style/question_textview_style"
+                android:text="@string/efficiency_question" />
+
+            <!-- Answer Choices -->
+            <RadioGroup
+                android:id="@+id/efficiency_answer"
+                style="@style/radio_group_style">
+
+                <RadioButton
+                    android:id="@+id/linear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/linear_answer" />
+
+                <RadioButton
+                    android:id="@+id/logarithmic_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/logarithmic_answer" />
+
+                <RadioButton
+                    android:id="@+id/quadratic_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quadratic_answer" />
+
+                <RadioButton
+                    android:id="@+id/factorial_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/factorial_answer" />
+            </RadioGroup>
+
+            <!-- Line separator -->
+            <View style="@style/line_separator_style" />
+
+        </LinearLayout>
+
+        <!-- Question 4 -->
+        <LinearLayout
+            android:id="@+id/data_structure_question_layout"
+            style="@style/linear_layout_style">
+
+            <TextView
+                android:id="@+id/data_structure_question"
+                style="@style/question_textview_style"
+                android:text="@string/data_structure_question" />
+
+            <!-- Answer, in LinearLayout to match other answer formats-->
+            <LinearLayout
+                android:id="@+id/data_structure_answer"
+                style="@style/linear_layout_style"
+                android:paddingLeft="@dimen/button_padding">
+
+                <EditText
+                    android:id="@+id/data_structure_edit_text"
+                    style="@style/edit_text_style" />
+
+            </LinearLayout>
+
+            <!-- Line separator -->
+            <View style="@style/line_separator_style" />
+
+        </LinearLayout>
+
+        <!-- Question 5 -->
+        <LinearLayout
+            android:id="@+id/abstract_class_question_layout"
+            style="@style/linear_layout_style">
+
+            <TextView
+                android:id="@+id/abstract_class_question"
+                style="@style/question_textview_style"
+                android:text="@string/abstract_class_question" />
+
+            <!-- Answer Choices -->
+            <RadioGroup
+                android:id="@+id/abstract_class_answer"
+                style="@style/radio_group_style">
+
+                <RadioButton
+                    android:id="@+id/abstract_class_true_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/true_answer" />
+
+                <RadioButton
+                    android:id="@+id/abstract_class_false_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/false_answer" />
+            </RadioGroup>
+
+            <!-- Line separator -->
+            <View style="@style/line_separator_style" />
+
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:onClick="gradeQuiz"
+            android:text="@string/submit_button"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/windowBackgound</item>
+    </style>
+
+    <!-- Vertical Linear Layout Style -->
+    <style name="linear_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!-- Question TextView Style -->
+    <style name="question_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/vertical_margin_size</item>
+        <item name="android:layout_marginLeft">@dimen/side_margin_size</item>
+        <item name="android:layout_marginRight">@dimen/side_margin_size</item>
+        <item name="android:textSize">@dimen/question_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!-- Direction TextView Style -->
+    <style name="direction_textview_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/direction_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <!-- Checkbox Style -->
+    <style name="checkbox_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/checkbox_text_size</item>
+        <item name="android:paddingLeft">@dimen/checkbox_padding</item>
+    </style>
+
+    <!-- Line Separator Style -->
+    <style name="line_separator_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/line_separator_height</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">@dimen/vertical_margin_size</item>
+        <item name="android:layout_marginBottom">@dimen/vertical_margin_size</item>
+        <item name="android:layout_marginLeft">@dimen/side_margin_size</item>
+        <item name="android:layout_marginRight">@dimen/side_margin_size</item>
+    </style>
+
+    <!-- RadioGroup Style -->
+    <style name="radio_group_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">@dimen/button_padding</item>
+    </style>
+
+    <!-- EditText Style -->
+    <style name="edit_text_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@string/edit_text_directions</item>
+        <item name="android:textSize">@dimen/direction_text_size</item>
+    </style>
+
+</resources>

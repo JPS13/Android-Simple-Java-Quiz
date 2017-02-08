@@ -1,0 +1,36 @@
+<resources>
+    <!-- Title of App -->
+    <string name="app_name">Simple Java Quiz</string>
+
+    <!-- Question 1 strings -->
+    <string name="keyword_question">Which of the following is a Java keyword?</string>
+    <string name="keyword_jump">jump</string>
+    <string name="keyword_finally">finally</string>
+    <string name="keyword_continue">continue</string>
+    <string name="keyword_instanceof">instanceof</string>
+
+    <string name="checkbox_directions">(Select All That Apply)</string>
+
+    <!-- Question 2 strings -->
+    <string name="platform_question">Java is a platform-independent programming language.</string>
+    <string name="true_answer">True</string>
+    <string name="false_answer">False</string>
+
+    <!-- Question 3 strings -->
+    <string name="efficiency_question">What is the worst case running time of Binary Search?</string>
+    <string name="linear_answer">O(N)</string>
+    <string name="logarithmic_answer">O(Log N)</string>
+    <string name="quadratic_answer">O(N^2)</string>
+    <string name="factorial_answer">O(N!)</string>
+
+    <!-- Question 4 strings -->
+    <string name="data_structure_question">Which abstract data type is processed in a LIFO manner?</string>
+    <string name="edit_text_directions">Enter answer here</string>
+
+    <!-- Question 5 strings -->
+    <string name="abstract_class_question">An abstract class can be instantiated.</string>
+
+    <!-- Submit Button -->
+    <string name="submit_button">submit</string>
+
+</resources>
